@@ -44,6 +44,8 @@ public class WebdemoController {
         model.addAttribute("country", registrationForm.getCountry());
         model.addAttribute("dob", registrationForm.getDob());
         model.addAttribute("email", registrationForm.getEmail());
+        model.addAttribute("income", registrationForm.getIncome());
+
 
         return "success"; // returns Thymeleafe template success.html
     }

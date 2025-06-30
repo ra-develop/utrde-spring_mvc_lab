@@ -24,6 +24,10 @@ public class RegistrationForm {
     @Email(message = "Invalid email format")
     private String email;
 
+    // @NotBlank(message = "Income is required")
+    @Positive(message = "Income should be positive")
+    private Integer income;
+
     // Getters and Setters
     public String getFirstName() {
         return firstName;
@@ -63,5 +67,13 @@ public class RegistrationForm {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getIncome() {
+        return income;
+    }
+
+    public void setIncome(Integer income) {
+        this.income = income;
     }
 }

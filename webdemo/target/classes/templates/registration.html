@@ -48,6 +48,12 @@
             <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error"></span>
             <br>
 
+            <!-- Annual income -->
+            <label for="income">Annual income:</label>
+            <input type="number" id="income" th:field="*{income}" required>
+            <span th:if="${#fields.hasErrors('income')}" th:errors="*{income}" class="error"></span>
+            <br>
+
             <!-- Submit Button -->
             <button type="submit">Register</button>
         </form>
